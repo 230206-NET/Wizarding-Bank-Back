@@ -34,12 +34,12 @@ namespace API.Controllers
 
         [HttpPut]
         public Transaction UpdateTransaction(Transaction transact){
-            return _services.UpdateBusiness(transact);
+            return _services.UpdateTransaction(transact);
         }
 
         [HttpDelete]
         public Transaction DeleteTransaction(Transaction transact){
-            return _services.DeleteBusiness(transact);
+            return _services.DeleteTransaction(transact);
         }
 
     }
