@@ -174,7 +174,7 @@ public partial class WizardingBankDbContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
             entity.Property(e => e.Description)
-                .HasMaxLength(1)
+                .HasMaxLength(200)
                 .IsUnicode(false)
                 .HasColumnName("description");
             entity.Property(e => e.LoanId).HasColumnName("loan_id");
