@@ -41,6 +41,5 @@ namespace API.Controllers
         public Transaction DeleteTransaction(Transaction transact){
             return _services.DeleteTransaction(transact);
         }
-
     }
 }
